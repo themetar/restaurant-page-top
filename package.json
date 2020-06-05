@@ -1,0 +1,14 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "A restaurant's website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "themetar",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
