@@ -1,0 +1,21 @@
+#content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 50vh;
+  background: url('pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg') 50% 40% / cover;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+}
+
+header > h1 {
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+}
+
+header > p { padding: 1em 5em;}
