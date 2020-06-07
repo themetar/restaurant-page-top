@@ -63,7 +63,10 @@ label:hover { background: lightgray; }
 
 #tab-content > * { margin-top: 0; }
 
-#tab-content { padding: 3em 1em; }
+#tab-content {
+  padding: 3em 1em;
+  margin-bottom: 1em;
+}
 
 #tab-content.menu {
   columns: 2;
@@ -71,3 +74,12 @@ label:hover { background: lightgray; }
 }
 
 h2 { column-span: all; }
+
+footer { font-size: 10pt; }
+
+footer a {
+  background-color: #fbc85a;
+  color: white;
+  padding: 2pt;
+  border-radius: 2pt;
+}
