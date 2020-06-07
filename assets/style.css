@@ -10,6 +10,7 @@ header {
   display: flex;
   flex-flow: column;
   justify-content: end;
+  margin-bottom: 1em;
 }
 
 header > h1 {
@@ -24,12 +25,15 @@ header > p { padding: 1em 5em;}
   border-bottom: 2px solid black;
 }
 
+label:first-of-type { margin-left: 2em; } /* a bit of space in front of the tabs */
+
 #tabs input { display: none; }
 
 label {
   display: inline-block;
   padding: 1em 3em;
   background: gray;
+  border-radius: 4px 4px 0 0;
   position: relative;
   text-transform: capitalize;
 }
@@ -45,8 +49,9 @@ input:checked + label::after {
 }
 
 input:checked + label,
-input:checked + label::after {
-  background: white;
+input:checked + label::after,
+#tab-content {
+  background: #fbc85a;
 }
 
 input:not(:checked) + label {
@@ -55,3 +60,14 @@ input:not(:checked) + label {
 }
 
 label:hover { background: lightgray; }
+
+#tab-content > * { margin-top: 0; }
+
+#tab-content { padding: 3em 1em; }
+
+#tab-content.menu {
+  columns: 2;
+  text-align: center;
+}
+
+h2 { column-span: all; }
