@@ -1,4 +1,6 @@
 import initialContent from "./initial-content";
+import menuContent from "./menu-content";
+import { contactContent } from "./contact-content";
 
 initialContent();
 
@@ -23,6 +25,15 @@ for (let tab_name of ['menu', 'contact']) {
 }
 document.querySelector('#content').appendChild(tabs_div);
 
-function tabHandler(event) { console.log(this.value); }
+function tabHandler(event) {
+  let tab_content = document.querySelector('#tab-content');
+  document.querySelector('#content').removeChild(tab_content);
+
+  if (this.value === 'menu') menuContent();
+  if (this.value === 'contact') contactContent();
+}
+
+/* Initialize */
 
 tabs_div.children[0].setAttribute('checked', 'true');
+menuContent();
